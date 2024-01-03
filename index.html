@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
     <title>My Portfolio</title>
+    <!-- Linking external stylesheets -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- Navigation for desktop -->
     <nav id="desktop-nav">
+      <!-- Logo for desktop navigation -->
       <div class="logo">Pavin Pariyar</div>
       <div>
+        <!-- Navigation links for desktop -->
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <!--Created Navigation/Hyperlinks-->
+          <!-- Created Navigation/Hyperlinks -->
         </ul>
       </div>
     </nav>
+    <!-- Navigation for hamburger menu -->
     <nav id="hamburger-nav">
+      <!-- Logo for hamburger menu -->
       <div class="logo">Pavin Pariyar</div>
+      <!-- Hamburger menu content -->
       <div class="hamburger-menu">
+        <!-- Hamburger icon with three spans for lines -->
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
         <div class="menu-links"></div>
+        <!-- Navigation links for hamburger menu -->
         <ul>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
@@ -38,28 +49,38 @@
         </ul>
       </div>
     </nav>
+    <!-- Profile section -->
     <section id="profile">
+      <!-- Container for profile picture -->
       <div class="section_pic-container">
         <img src="./assets/me.jpeg" alt="Pavin Pariyar profile picture" />
       </div>
+      <!-- Container for profile text -->
       <div class="section_text">
+        <!-- Greeting text -->
         <p class="section_text_p1">Hello, my name is</p>
+        <!-- Main title or name -->
         <h2 class="title">Pavin Pariyar</h2>
+        <!-- Description or job title -->
         <p class="section_text_p2">Beginner Software Engineer</p>
+        <!-- Container for buttons -->
         <div class="btn-container">
+          <!-- Button to download CV -->
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/resume-example.pdf')"
           >
             Download CV
           </button>
+          <!-- Button to view contact info -->
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
       </div>
     </section>
+    <!-- Including external JavaScript file -->
     <script src="script.js"></script>
-    <!--Referencing CSS and JS-->
+    <!-- Referencing CSS and JS -->
   </body>
 </html>
