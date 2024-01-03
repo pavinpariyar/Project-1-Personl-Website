@@ -114,6 +114,46 @@ a:hover {
     transition: all 0.3 ease-in-out;
 }
 
+#profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50vh;
+    padding: 0 200px;
+}
 
+.section_pic-container {
+    flex: 1;
+}
 
+.section_pic-container img {
+    max-width: 50%;
+    height: auto; 
+    /* Maintains aspect ratio */
+}
 
+.section_text {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+    /* Margin to separate text from the image */
+}
+
+.section_text h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section_text p {
+    font-size: 1.2rem;
+    line-height: 1.4; 
+    /* line height for consistency */
+    margin-bottom: 10px;
+}
+
+.btn-container {
+    text-align: left;
+}
